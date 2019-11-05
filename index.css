@@ -32,6 +32,10 @@ a.normal:hover, a.normal:active {
     text-decoration: none;
 }
 
+.outside2 {
+    color: black;
+}
+
 .BigName {
     color: rgba(48, 7, 233, 0.904);
     font-size: 72pt;
