@@ -2,6 +2,7 @@ body, html {
     height: 100%;
     width: 100%;
     text-align: center;
+
 }
 
 .bg {
@@ -11,7 +12,54 @@ body, html {
     height: 100%;
 }
 
-a.normal:link, a.normal:visited {
+
+
+
+@media screen and (min-width: 300px) and (max-width:640px) {
+
+    .order {
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+    .div2 {
+        float: center;
+        width: 0%;
+      }
+    
+      a.normal:link, a.normal:visited {
+        background-color: blue;
+        color: white;
+        padding: 14px 25px 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        transform: rotate(0deg);
+        display: inline-block;
+        margin: 10px 20px 10px 20px;
+      }
+    
+      a.normal:hover, a.normal:active {
+        background-color: blue;
+        padding: 14px 30px 14px 30px;
+      }
+    
+} /*End of media small screen*/
+
+@media screen and (min-width: 641px) {
+
+  .order {
+    height: 100%;
+    display: flex;
+  }
+
+  .div2 {
+    margin-top: 5%;
+    float: left;
+    width: 0%;
+  }
+
+  a.normal:link, a.normal:visited {
     background-color: blue;
     color: white;
     padding: 14px 25px 14px 100px;
@@ -21,11 +69,19 @@ a.normal:link, a.normal:visited {
     display: inline-block;
     margin: 10px 20px 10px -30px;
   }
-  
-a.normal:hover, a.normal:active {
+
+  a.normal:hover, a.normal:active {
     background-color: blue;
     padding: 14px 25px 14px 120px;
   }
+
+} /*End of media big screen*/
+
+
+
+  
+
+
 
 .outside {
     color: rgb(48, 65, 163);
@@ -38,20 +94,15 @@ a.normal:hover, a.normal:active {
 
 .BigName {
     color: rgba(48, 7, 233, 0.904);
-    font-size: 72pt;
+    font-size: 4.5rem;
     padding: 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 10% 0px 100px 0px;
 }
 
 .div1 {
     float: center;
     text-align: center;
     width: 100%;
-}
-
-.div2 {
-    float: left;
-    width: 0%;
 }
 
 #parallelogram {
