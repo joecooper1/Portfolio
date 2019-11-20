@@ -5,8 +5,8 @@ body, html {
 }
 
 .bg {
-    background-image: url('blueback.png');
-    background-color: grey;
+    /*background-image: url('blueback.png');*/
+    background-color: beige;
     background-size: 100%;
     height: 100%;
 }
@@ -44,6 +44,7 @@ a.normal:hover, a.normal:active {
 }
 
 .div1 {
+    float: center;
     text-align: center;
     width: 100%;
 }
