@@ -24,7 +24,7 @@ body, html {
       }
 
     .div2 {
-        float: center;
+        margin: 0 50% 0 50%;
         width: 0%;
         text-align: center;
         display: flex;
@@ -46,6 +46,14 @@ body, html {
       a.normal:hover, a.normal:active {
         background-color: blue;
         padding: 14px 30px 14px 30px;
+      }
+
+      .BigName {
+        width: 100%;
+        color: rgba(48, 7, 233, 0.904);
+        font-size: 4.5rem;
+        padding: 0px;
+        margin: 5% 0px 1rem 0px;
       }
     
 } /*End of media small screen*/
@@ -79,6 +87,13 @@ body, html {
     padding: 14px 25px 14px 120px;
   }
 
+  .BigName {
+    color: rgba(48, 7, 233, 0.904);
+    font-size: 4.5rem;
+    padding: 0px;
+    margin: 10% 0px 6rem 0px;
+  }
+
 } /*End of media big screen*/
 
 
@@ -94,13 +109,6 @@ body, html {
 
 .outside2 {
     color: black;
-}
-
-.BigName {
-    color: rgba(48, 7, 233, 0.904);
-    font-size: 4.5rem;
-    padding: 0px;
-    margin: 10% 0px 6rem 0px;
 }
 
 .div1 {
