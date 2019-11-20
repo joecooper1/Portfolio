@@ -1,14 +1,25 @@
 body, html {
 
+    /*text-align: center;
+    --text-color1: #AC3B61;
+    --back-color: #EDC7B7;
+    --back-color2: #EEE2DC;
+    --text-color2: #AC3B61;
+    --font-color1: black;*/
+
     text-align: center;
+    --text-color1: #D83F87;
+    --back-color: #2A1B3D;
+    --back-color2: #44318D;
+    --text-color2: #D83F87;
+    --font-color1: white;
+
 
 }
 
 .bg {
-    /*background-image: url('blueback.png');*/
-    background-color: beige;
-    background-size: 100%;
-    height: 100%;
+    background-image: radial-gradient(var(--back-color2), var(--back-color));
+    background-color: var(--back-color);
 }
 
 
@@ -33,7 +44,7 @@ body, html {
       }
     
       a.normal:link, a.normal:visited {
-        background-color: blue;
+        background-color: var(--text-color2);
         color: white;
         padding: 14px 25px 14px 25px;
         text-align: center;
@@ -44,16 +55,21 @@ body, html {
       }
     
       a.normal:hover, a.normal:active {
-        background-color: blue;
+        background-color: var(--text-color2);
         padding: 14px 30px 14px 30px;
       }
 
       .BigName {
         width: 100%;
-        color: rgba(18, 134, 230, 0.966);
+        color: var(--back-color);
         font-size: 16vw;
         padding: 0px;
         margin: 5% 0px 1rem 0px;
+        text-shadow:
+        -2px -2px 0 var(--text-color2),
+        2px -2px 0 var(--text-color2),
+        -2px 2px 0 var(--text-color2),
+        2px 2px 0 var(--text-color2);
       }
     
 } /*End of media small screen*/
@@ -72,7 +88,7 @@ body, html {
   }
 
   a.normal:link, a.normal:visited {
-    background-color: blue;
+    background-color: var(--text-color2);
     color: white;
     padding: 14px 25px 14px 100px;
     text-align: center;
@@ -83,33 +99,24 @@ body, html {
   }
 
   a.normal:hover, a.normal:active {
-    background-color: blue;
+    background-color: var(--text-color2);
     padding: 14px 25px 14px 120px;
   }
 
   .BigName {
-    color: rgba(48, 7, 233, 0.904);
+    color: var(--back-color);
     font-size: 4.5rem;
     padding: 0px;
     margin: 10% 0px 6rem 0px;
+    text-shadow:
+    -2px -2px 0 var(--text-color2),
+    2px -2px 0 var(--text-color2),
+    -2px 2px 0 var(--text-color2),
+    2px 2px 0 var(--text-color2);
   }
 
 } /*End of media big screen*/
 
-
-
-  
-
-
-
-.outside {
-    color: rgb(48, 65, 163);
-    text-decoration: none;
-}
-
-.outside2 {
-    color: black;
-}
 
 .div1 {
     float: center;
@@ -117,9 +124,11 @@ body, html {
     width: 100%;
 }
 
-#parallelogram {
-    width: 150px;
-    height: 100px;
-    transform: skew(20deg);
-    background: blue;
-  }
+p {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
