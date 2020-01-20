@@ -1,18 +1,18 @@
 body,
 html {
-  text-align: center;
+  /* text-align: center;
   --text-color1: #ac3b61;
   --back-color: #edc7b7;
   --back-color2: #eee2dc;
   --text-color2: #ac3b61;
-  --font-color1: black;
+  --font-color1: black; */
 
-  /* text-align: center;
-    --text-color1: #D83F87;
-    --back-color: #2A1B3D;
-    --back-color2: #44318D;
-    --text-color2: #D83F87;
-    --font-color1: white; */
+  text-align: center;
+  --text-color1: #d83f87;
+  --back-color: #2a1b3d;
+  --back-color2: #44318d;
+  --text-color2: #d83f87;
+  --font-color1: white;
 }
 
 .bg {
