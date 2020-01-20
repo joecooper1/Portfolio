@@ -1,0 +1,121 @@
+body,
+html {
+  text-align: center;
+  --text-color1: #ac3b61;
+  --back-color: #edc7b7;
+  --back-color2: #eee2dc;
+  --text-color2: #ac3b61;
+  --font-color1: black;
+
+  /* text-align: center;
+    --text-color1: #D83F87;
+    --back-color: #2A1B3D;
+    --back-color2: #44318D;
+    --text-color2: #D83F87;
+    --font-color1: white; */
+}
+
+.bg {
+  background-image: radial-gradient(var(--back-color2), var(--back-color));
+  background-color: var(--back-color);
+}
+
+@media screen and (min-width: 300px) and (max-width: 640px) {
+  .order {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .div2 {
+    margin: 0 50% 0 50%;
+    width: 0%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a.normal:link,
+  a.normal:visited {
+    background-color: var(--text-color2);
+    color: white;
+    padding: 14px 25px 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    transform: rotate(0deg);
+    display: inline-block;
+    margin: 4px 20px 4px 20px;
+  }
+
+  a.normal:hover,
+  a.normal:active {
+    background-color: var(--text-color2);
+    padding: 14px 30px 14px 30px;
+  }
+
+  .BigName {
+    width: 100%;
+    color: var(--back-color);
+    font-size: 16vw;
+    padding: 0px;
+    margin: 5% 0px 1rem 0px;
+    text-shadow: -2px -2px 0 var(--text-color2), 2px -2px 0 var(--text-color2),
+      -2px 2px 0 var(--text-color2), 2px 2px 0 var(--text-color2);
+  }
+} /*End of media small screen*/
+
+@media screen and (min-width: 641px) {
+  .order {
+    height: 100%;
+    display: flex;
+  }
+
+  .div2 {
+    margin-top: 5%;
+    float: left;
+    width: 0%;
+  }
+
+  a.normal:link,
+  a.normal:visited {
+    background-color: var(--text-color2);
+    color: white;
+    padding: 14px 25px 14px 100px;
+    text-align: center;
+    text-decoration: none;
+    transform: rotate(5deg);
+    display: inline-block;
+    margin: 10px 20px 10px -30px;
+  }
+
+  a.normal:hover,
+  a.normal:active {
+    background-color: var(--text-color2);
+    padding: 14px 25px 14px 120px;
+  }
+
+  .BigName {
+    color: var(--back-color);
+    font-size: 4.5rem;
+    padding: 0px;
+    margin: 10% 0px 6rem 0px;
+    text-shadow: -2px -2px 0 var(--text-color2), 2px -2px 0 var(--text-color2),
+      -2px 2px 0 var(--text-color2), 2px 2px 0 var(--text-color2);
+  }
+} /*End of media big screen*/
+
+.div1 {
+  float: center;
+  text-align: center;
+  width: 100%;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: white;
+}
