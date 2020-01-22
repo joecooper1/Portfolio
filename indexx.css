@@ -1,0 +1,117 @@
+body,
+html {
+  /* text-align: center;
+  --text-color1: #ac3b61;
+  --back-color: #edc7b7;
+  --back-color2: #eee2dc;
+  --text-color2: #ac3b61;
+  --font-color1: black; */
+
+  text-align: center;
+  --text-color1: #d83f87;
+  --back-color: #2a1b3d;
+  --back-color2: #44318d;
+  --text-color2: #d83f87;
+  --font-color1: white;
+}
+
+.bg {
+  background-image: radial-gradient(var(--back-color2), var(--back-color));
+  background-color: var(--back-color);
+}
+
+.order {
+  height: 100%;
+  display: flex;
+}
+
+a.normal:link,
+a.normal:visited {
+  background-color: var(--text-color2);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.BigName {
+  color: var(--back-color);
+  padding: 0px;
+  text-shadow: -2px -2px 0 var(--text-color2), 2px -2px 0 var(--text-color2),
+    -2px 2px 0 var(--text-color2), 2px 2px 0 var(--text-color2);
+}
+
+@media screen and (min-width: 300px) and (max-width: 640px) {
+  .order {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .div2 {
+    margin: 0 50% 0 50%;
+    width: 0%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a.normal:link,
+  a.normal:visited {
+    padding: 14px 25px 14px 25px;
+    transform: rotate(0deg);
+    margin: 4px 20px 4px 20px;
+  }
+
+  a.normal:hover,
+  a.normal:active {
+    background-color: var(--text-color2);
+    padding: 14px 30px 14px 30px;
+  }
+
+  .BigName {
+    width: 100%;
+    font-size: 16vw;
+    margin: 5% 0px 1rem 0px;
+  }
+} /*End of media small screen*/
+
+@media screen and (min-width: 641px) {
+  .div2 {
+    margin-top: 5%;
+    float: left;
+    width: 0%;
+  }
+
+  a.normal:link,
+  a.normal:visited {
+    padding: 14px 25px 14px 100px;
+    transform: rotate(5deg);
+    margin: 10px 20px 10px -30px;
+  }
+
+  a.normal:hover,
+  a.normal:active {
+    background-color: var(--text-color2);
+    padding: 14px 25px 14px 120px;
+  }
+
+  .BigName {
+    font-size: 4.5rem;
+    margin: 10% 0px 6rem 0px;
+  }
+} /*End of media big screen*/
+
+.div1 {
+  float: center;
+  text-align: center;
+  width: 100%;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: white;
+}
