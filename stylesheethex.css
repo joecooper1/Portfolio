@@ -13,6 +13,7 @@ html {
   grid-template: 10% 40% 10% 20% 20% / 20% 10% 40% 30%;
   position: relative;
   font-family: "Lato", sans-serif;
+  /* font-family: "DejaVuSerif"; */
 }
 
 .wrapper {
@@ -25,7 +26,8 @@ html {
   margin-top: -15%;
   margin-left: -10%;
   position: fixed;
-  font-family: "DejaVuSerifCondensedBold";
+  font-family: "DejaVuSerif";
+  /* font-family: "Lato", sans-serif; */
 }
 
 a.normal:link,
