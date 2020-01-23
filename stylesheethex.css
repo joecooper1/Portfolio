@@ -19,12 +19,13 @@ html {
   height: 150vw;
   width: 150vw;
   display: grid;
-  grid-template: repeat(15, 57.5px 115px) / repeat(12, 205.5px);
+  grid-template: repeat(4, 57.5px 115px) / repeat(12, 205px);
   grid-gap: 0px;
   z-index: 0;
   margin-top: -15%;
   margin-left: -10%;
   position: fixed;
+  font-family: "Times New Roman", Times, serif;
 }
 
 a.normal:link,
@@ -41,6 +42,30 @@ a.normal:visited {
 a.normal:hover,
 a.normal:active {
   margin: 10px 20px 10px -90px;
+}
+
+@keyframes colorChange {
+  0% {
+    filter: invert(10%);
+  }
+  50% {
+    filter: invert(30%);
+  }
+  100% {
+    filter: invert(10%);
+  }
+}
+
+@keyframes colorChange2 {
+  0% {
+    filter: invert(30%);
+  }
+  50% {
+    filter: invert(10%);
+  }
+  100% {
+    filter: invert(30%);
+  }
 }
 
 .BigName {
