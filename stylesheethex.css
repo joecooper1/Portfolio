@@ -2,6 +2,7 @@ body,
 html {
   text-align: center;
   height: 90%;
+  font-family: "Lato", sans-serif;
 }
 
 #overlay {
@@ -16,17 +17,22 @@ html {
   /* font-family: "DejaVuSerif"; */
 }
 
+.hexy {
+  /* font-family: "DejaVuSerif", serif; */
+}
+
 .wrapper {
   height: 150vw;
   width: 150vw;
   display: grid;
-  grid-template: repeat(4, 57.5px 115px) / repeat(12, 205px);
+  /* grid-template: repeat(4, 57.5px 115px) / repeat(12, 211px); */
+  grid-template: repeat(4, 60px 120px) / repeat(12, 217px);
   grid-gap: 0px;
   z-index: 0;
   margin-top: -15%;
-  margin-left: -10%;
+  margin-left: -20%;
   position: fixed;
-  font-family: "DejaVuSerif", serif;
+  /* font-family: "DejaVuSerif", serif; */
   /* font-family: "Lato", sans-serif; */
 }
 
@@ -70,7 +76,7 @@ a.normal:active {
   }
 }
 
-.BigName {
+#BigName {
   /* color: var(--back-color); */
   color: white;
   padding: 0px;

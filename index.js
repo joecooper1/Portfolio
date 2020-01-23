@@ -55,12 +55,11 @@ for (let i = 1; i < 10; i++) {
       newSq.style.left = "50%";
     }
     // newSq.innerText = `${newSq.style.color}`;
-    // newSq.style.transform = "scaleY(1)";
+    // newSq.style.transform = "scaleY(1)";/
+    // newSq.style.fontFamily = "DejaVuSerif, serif";
     wrapper.appendChild(newSq);
   }
 }
-
-hexy.remove();
 
 //on scroll
 
